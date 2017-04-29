@@ -13,7 +13,7 @@ enforce_ssl: "https://techguy9312.com"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
+#baseurl: /personal-jekyll-theme
 
 # Google tracking id
 
