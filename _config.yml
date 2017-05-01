@@ -31,7 +31,7 @@ force-https: True
 lang: "en"
 author: "Vanessa Silvas"
 title: "{ Vane's Art }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
+description: "A place to view artwork by Vannessa Silvas"
 keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/labtocat.png"
 
