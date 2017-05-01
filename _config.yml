@@ -57,7 +57,6 @@ delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "This is where I express myself."
   - text: "This is Vane's Art."
-  - text: "Test Line."
 
 me-img: "/img/labtocat.png"
 
