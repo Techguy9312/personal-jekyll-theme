@@ -33,7 +33,7 @@ author: "Vanessa Silvas"
 title: "{ Vane's Art }"
 description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
 keywords: "smith, jones, personal, jekyll, theme"
-favicon: "/img/lions.png"
+favicon: "/img/labtocat.png"
 
 ################
 # Header layout #
@@ -58,7 +58,7 @@ lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
 
-me-img: "/img/lions.png"
+me-img: "/img/labtocat.png"
 
 ##############################
 # Color the browser elements #
