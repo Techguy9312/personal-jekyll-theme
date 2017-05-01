@@ -171,7 +171,7 @@ keybase-in-footer: True
 
 pages_list:
   Slideshow: 'about'
-  Blog: 'latest-post'
+  About Me: 'latest-post'
   Timeline: 'timeline'
   Contact: 'contact'
 
