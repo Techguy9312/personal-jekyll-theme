@@ -41,7 +41,7 @@ favicon: "/img/Lions.jpg"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: "../img/Lions.jpg"
+background-img: "../img/Lions.JPG"
 
 ##############################
 # Dynamic Text on the Header #
