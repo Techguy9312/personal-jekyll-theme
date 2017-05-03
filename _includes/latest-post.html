@@ -10,37 +10,6 @@
 <!-- Latest Post Preview End -->
 
 
-<div class="container">  
-  <form id="contact" action="https://script.google.com/macros/s/AKfycbyePyppGycT3iwxNPE7kv6o4SCKXDXLR5H8lJDOUd3dgexQC7e9/exec" method="post">
-    <h3>Custom Piece</h3>
-    <h4>Request Form!</h4>
-    <fieldset>
-      <input placeholder="Your name" type="text" tabindex="1" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Email Address" type="email" tabindex="2" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-      <textarea placeholder="Describe your desired peice of work...." tabindex="5" required></textarea>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-    </fieldset>
-  </form>
-  
-    <!-- Submit the Form to Google Using "AJAX" -->
-  <script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-  <!-- <script data-cfasync="false" type="text/javascript"
-  src="/form-submission-handler.js"></script> -->
-<!-- END -->
- 
-  
-</div>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -63,34 +32,32 @@
   action="https://script.google.com/macros/s/AKfycbyePyppGycT3iwxNPE7kv6o4SCKXDXLR5H8lJDOUd3dgexQC7e9/exec">
     <!-- change the form action to your script url -->
 
+
+
+    <h3>Custom Piece</h3>
+    <h4>Request Form!</h4>
+
     <fieldset>
-      <label for="name">Name: </label>
-      <input id="name" name="name" placeholder="What your Mom calls you" />
+      <input placeholder="Your name" type="text" tabindex="1" required>
     </fieldset>
 
     <fieldset>
-      <label for="message">Message: </label>
-      <textarea id="message" name="message" rows="10"
-      placeholder="Tell us what's on your mind..."></textarea>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
     </fieldset>
 
     <fieldset>
-      <label for="email"><em>Your</em> Email Address:</label>
-      <input id="email" name="email" type="email" value=""
-      required placeholder="your.name@email.com"/>
-      <span id="email-invalid" style="visibility:hidden">
-        Must be a valid email address</span>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
     </fieldset>
 
     <fieldset>
-      <label for="color">Favourite Color: </label>
-      <input id="color" name="color" placeholder="green" />
+      <textarea placeholder="Describe your desired peice of work...." tabindex="5" required></textarea>
     </fieldset>
 
-    <button class="button-success pure-button button-xlarge">
-      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
 
-  </form>
+   </form>
 
   <!-- Customise the Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
