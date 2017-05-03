@@ -168,11 +168,9 @@ keybase-in-footer: True
 # NB! Tread carefully if you want to change the variables below this point!
 
 # Sections shown in the index page
-
 pages_list:
   Slideshow: 'about'
   Custom Request Form: 'latest-post'
-
 # Exclusion list from the generated _site
 
 exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
