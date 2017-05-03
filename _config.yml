@@ -41,7 +41,7 @@ favicon: "/img/labtocat.png"
 
 black-favicon: "/img/black-lab-glass.ico"
 
-background-img: ""
+background-img: "/img/wood.jpg"
 
 ##############################
 # Dynamic Text on the Header #
