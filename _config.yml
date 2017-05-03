@@ -172,8 +172,6 @@ keybase-in-footer: True
 pages_list:
   Slideshow: 'about'
   Custom Request Form: 'latest-post'
-  Timeline: 'timeline'
-  Contact: 'contact'
 
 # Exclusion list from the generated _site
 
