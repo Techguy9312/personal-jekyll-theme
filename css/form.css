@@ -1,5 +1,5 @@
 body {
-  margin: 0em;
+  margin: 2em;
 }
 
 aside {
@@ -11,7 +11,7 @@ aside {
  }
 
 textarea {
-  width: 50%;
+  width: 100%;
 }
 .content-head {
   font-weight: 400;
