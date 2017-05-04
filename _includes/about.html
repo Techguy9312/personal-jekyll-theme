@@ -9,55 +9,46 @@
   
 </section>
 
- <html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:compact;}
-</style>
-<body>
-  
-  <div class="w3-content w3-section" style="max-width:500px">
- <img class="mySlides w3-animate-fading" src="/img/bear.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/bee.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/buffalo.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/camping.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/coasters.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/deer.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/fish.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/deerfight.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/japanese.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/Lions.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/racoons.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/skull.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="/img/skullonbricks.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/thanos.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/wolf.jpg" style="width:100%">
+<div id="slideshow">
+   <div>
+     <img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+   </div>
+   <div>
+     <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+   </div>
+   <div>
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
 </div>
-
-<script>
   
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000); // Change image every 5 seconds
+#slideshow { 
+    margin: 50px auto; 
+    position: relative; 
+    width: 240px; 
+    height: 240px; 
+    padding: 10px; 
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
 }
-  
-</script>
 
-</body>
-</html>
+#slideshow > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
 
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
 
 <!-- About End -->
 
