@@ -1,5 +1,5 @@
 body {
-  margin: 2em;
+  margin: 0em;
 }
 
 aside {
@@ -11,7 +11,7 @@ aside {
  }
 
 textarea {
-  width: 100%;
+  width: 50%;
 }
 .content-head {
   font-weight: 400;
@@ -135,12 +135,6 @@ fieldset {
 
 #contact button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-#contact input:focus,
-#contact textarea:focus {
-  outline: 0;
-  border: 1px solid #999;
 }
 
 ::-webkit-input-placeholder {
