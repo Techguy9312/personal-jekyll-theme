@@ -6,50 +6,19 @@
       {{ page.content | markdownify }}
     </div>    
   </div>
-  
 </section>
 
- <html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.mySlides {display:compact;}
-</style>
-<body>
-  
-  <div class="w3-content w3-section" style="max-width:500px">
- <img class="mySlides w3-animate-fading" src="/img/bear.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/bee.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/buffalo.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/camping.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/coasters.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/deer.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/fish.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/deerfight.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/japanese.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/Lions.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/racoons.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/skull.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="/img/skullonbricks.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/thanos.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/wolf.jpg" style="width:100%">
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/Fancyslideshow.js" type="text/javascript"></script>
+
+<div id='slideshowHolder'>
+   <img src='/img/bear.jpg' alt='img1' />
+   <img src='/img/bee.jpg' alt='img2' />
+   <img src='/img/deer.jpg' alt='img3' />
 </div>
 
 <script>
-  
-var myIndex = 0;
-carousel();
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000); // Change image every 5 seconds
-}
-  
+$(document).ready( function(){
+    $('#slideshowHolder').jqFancyTransitions({ width: 400, height: 300 });
+});
 </script>
