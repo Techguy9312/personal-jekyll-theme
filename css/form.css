@@ -1,8 +1,8 @@
 aside {
-    background: #FDEBD0; /* same color as selected state on site menu */
+    background: #FDEBD0;
     padding: 0.3em 1em;
     border-radius: 3px;
-    color: #fff;
+    color: #52BE80;
     margin-bottom: 2em;
 }
 textarea {
