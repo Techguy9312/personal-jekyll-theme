@@ -170,7 +170,7 @@ keybase-in-footer: True
 # Sections shown in the index page
 pages_list:
   Slideshow: 'about'
-  Custom Request Form: 'latest-post'
+  Custom Woodburning: 'latest-post'
 # Exclusion list from the generated _site
 
 exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
