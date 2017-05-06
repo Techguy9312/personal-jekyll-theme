@@ -171,7 +171,7 @@ keybase-in-footer: True
 pages_list:
   Slideshow: 'about'
   Custom Woodburning: 'latest-post'
-  Gallery: 'Contact'
+  Gallery: 'contact'
 # Exclusion list from the generated _site
 
 exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
