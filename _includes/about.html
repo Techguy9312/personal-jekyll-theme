@@ -9,53 +9,62 @@
 </section>
 
 <html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
 <style>
-.mySlides {display:compact;}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
 </style>
+</head>
 <body>
-  
-  <div class="w3-content w3-section" style="max-width:500px">
-    <img class="mySlides w3-animate-fading" src="/img/vane.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/bear.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/bee.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/buffalo.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/camping.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/coasters.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/deer.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/elkfight.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/fish.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/heart.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/japanese.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/Lions.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/racoons.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/skull.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/skullonbricks.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/thanos.jpg" style="width:100%">
- <img class="mySlides w3-animate-fading" src="/img/wolf.jpg" style="width:100%">
+
+<div class="gallery">
+  <a target="_blank" href="img_fjords.jpg">
+    <img src="img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
 </div>
 
-<script>
-  
-var myIndex = 0;
-carousel();
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 5000); // Change image every 5 seconds
-}
-  
-</script>
+<div class="gallery">
+  <a target="_blank" href="img_forest.jpg">
+    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_lights.jpg">
+    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img_mountains.jpg">
+    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
 
 </body>
 </html>
+
 
 <!-- About End -->
