@@ -169,7 +169,7 @@ keybase-in-footer: True
 
 # Sections shown in the index page
 pages_list:
-  Slideshow: 'about'
+  Gallery: 'about'
   Custom Woodburning: 'latest-post'
 # Exclusion list from the generated _site
 
